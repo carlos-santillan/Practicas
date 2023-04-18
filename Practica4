@@ -1,0 +1,44 @@
+# ejemplo factorial de 10
+fac=1
+for x in range(1,11):
+    fac=fac*x
+
+print(fac)
+
+
+# 2.- realice la suma de los numeros pares menores a 100
+suma=0
+for x in range(0,100):
+    div= x % 2
+    #print(div)
+    if (div==0):
+        suma=suma+x
+        
+print(suma)
+
+
+
+s=0
+for i  in range(0,100,2):
+    s+=i
+print(s)
+
+
+estaciones = {1620 : {'temp': 45, 'humedad': 15, 'oxigeno': 9.10, 'nitrogeno': 71.08, 'argon': 9.24, 'dioxido_carbono': 0.08}, 
+         1621:{'temp': 35, 'humedad': 20, 'oxigeno': 46.26, 'nitrogeno': 40.24, 'argon': 4.75, 'dioxido_carbono': 0.29}, 
+         1622:{'temp': 4, 'humedad': 27, 'oxigeno': 17.50, 'nitrogeno': 32.43, 'argon': 9.09, 'dioxido_carbono': 0.73},
+         1623:{'temp': 38, 'humedad': 22, 'oxigeno': 21.31, 'nitrogeno': 6.75, 'argon': 5.69, 'dioxido_carbono': 0.03},
+         1624:{'temp': 3, 'humedad': 7, 'oxigeno': 32.01, 'nitrogeno': 74.63, 'argon': 5.95, 'dioxido_carbono': 0.81},
+         1625:{'temp': 46, 'humedad': 17, 'oxigeno': 16.11, 'nitrogeno': 30.61, 'argon': 5.75, 'dioxido_carbono': 0.46},
+         1626:{'temp': 31, 'humedad': 23, 'oxigeno': 28.53, 'nitrogeno': 35.27, 'argon': 2.38, 'dioxido_carbono': 0.19},
+         1627:{'temp': 31, 'humedad': 30, 'oxigeno': 45.73, 'nitrogeno': 44.04, 'argon': 5.76, 'dioxido_carbono': 0.75},
+         1628:{'temp': 23, 'humedad': 26, 'oxigeno': 22.73, 'nitrogeno': 0.55, 'argon': 9.94, 'dioxido_carbono': 0.21},
+         1629:{'temp': 50, 'humedad': 20, 'oxigeno': 43.40, 'nitrogeno': 6.86, 'argon': 8.23, 'dioxido_carbono': 0.66},
+         1630:{'temp': 0, 'humedad': 7, 'oxigeno': 21.30, 'nitrogeno': 26.00, 'argon': 1.06, 'dioxido_carbono': 0.06},}
+         
+print(estaciones[1620]['temp'])
+
+print(f'temp\t humedad\t oxigeno\t nitrogeno\t dioxido_carbono \t')  # la /t es caracter de esca1pe, es un tabulador
+for x in range(1620,1631):
+    print(f'{estaciones[x]["temp"]}\t {estaciones[x]["humedad"]}\t\t {estaciones[x]["oxigeno"]}\t\t {estaciones[x]["nitrogeno"]}\t\t \t{estaciones[x]["dioxido_carbono"]}\t\t')  # la /t es caracter de esca1pe, es un tabulador
+    
